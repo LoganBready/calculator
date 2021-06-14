@@ -28,6 +28,18 @@ reader.question("What would you like to calculate?", function(input){
 	if (mathSymbol === '*'){
 		console.log(num1 * num2);
 	}
+	if (mathSymbol === 'sq'){
+		console.log(Math.pow(num1, 2));
+	}
+	if (mathSymbol === 'cb'){
+		console.log(Math.pow(num1, 3));
+	}
+	if (mathSymbol === 'rmdr'){
+		console.log(num1 % num2);
+	}
+	if (mathSymbol === 'rs'){
+		console.log(Math.pow(num1, num2));
+	}
 	reader.close()
 
 });
